@@ -8,13 +8,13 @@ import svg2 from '../assets/Buy.svg'
 const Navbar = () => {
     return (
         <div className='header-box'>
-            <div class="logo">
-                <p class="logo__text">Exclusive</p>
+            <div className="logo">
+                <p className="logo__text">Exclusive</p>
             </div>
 
-            <nav class="navbar">
-                <ul class="menu">
-                    <li><a href="#" class="active">Home</a></li>
+            <nav className="navbar">
+                <ul className="menu">
+                    <li><a href="#" className="active">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="sign.html">Sign Up</a></li>

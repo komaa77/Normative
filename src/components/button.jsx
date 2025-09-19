@@ -16,7 +16,7 @@ const Button = () => {
                    <div className="border"></div>
                     <div className="best__top">
                         <div className="best__title">
-                            <div className="section__title">
+                            <div className="section__title-best">
                                 <div className="red__icon"></div>
                                 <p className="section__text3">This Month</p>
                             </div>
@@ -89,24 +89,24 @@ const Button = () => {
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
-                                    <span class="best__number">(65)</span>
+                                    <span className="best__number">(65)</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="best__card">
-                            <div class="best__image">
+                        <div className="best__card">
+                            <div className="best__image">
                                 <img src={rgb} alt=""/>
                                 <div className="like">
                                 <img src={svg12} alt=""/>
                                 </div>
-                                <div class="eye">
+                                <div className="eye">
                                 <img src={svg11} alt=""/>
                                 </div>
                             </div>
-                            <div class="best__info">
-                                <p class="info__text">RGB liquid CPU Cooler</p>
-                                <div class="best__costs">
-                                    <span class="best__price">$160</span>
+                            <div className="best__info">
+                                <p className="info__text">RGB liquid CPU Cooler</p>
+                                <div className="best__costs">
+                                    <span className="best__price">$160</span>
                                 <span>
                                     <svg width="36" height="15" viewBox="0 0 36 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.5">
@@ -116,38 +116,38 @@ const Button = () => {
                                     </svg>
                                 </span>
                                 </div>
-                                <div class="best__ratings">
+                                <div className="best__ratings">
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
-                                    <span class="best__number">(65)</span>
+                                    <span className="best__number">(65)</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="best__card">
-                            <div class="best__image">
+                        <div className="best__card">
+                            <div className="best__image">
                                 <img src={desk} alt=""/>
                                 <div className="like">
                                 <img src={svg12} alt=""/>
                                 </div>
-                                <div class="eye">
+                                <div className="eye">
                                 <img src={svg11} alt=""/>
                                 </div>
                             </div>
-                            <div class="best__info">
-                                <p class="info__text">Small BookSelf</p>
-                                <div class="best__costs">
-                                    <span class="best__price">$360</span>
+                            <div className="best__info">
+                                <p className="info__text">Small BookSelf</p>
+                                <div className="best__costs">
+                                    <span className="best__price">$360</span>
                                 </div>
-                                <div class="best__ratings">
+                                <div className="best__ratings">
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
                                     <img src={svg13} alt=""/>
-                                    <span class="best__number">(65)</span>
+                                    <span className="best__number">(65)</span>
                                 </div>
                              </div>
                         </div>

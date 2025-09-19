@@ -6,6 +6,7 @@ import Main from './components/Menu';
 import FlashSales from './components/Flash-Sales';
 import Categories from './components/categories';
 import Button from './components/button';
+import ProductCards from './components/Product-Cards';
 
 const App = () =>{
   return (
@@ -14,6 +15,7 @@ const App = () =>{
     <Navbar/>
     <Main/>
     <FlashSales/>
+    <ProductCards/>
     <Categories/>
     <Button/>
     </>

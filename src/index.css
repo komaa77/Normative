@@ -41,7 +41,7 @@ font-weight: bold;
 font-size: 24px;
 line-height: 24px;
 letter-spacing: 3%;
-margin-right: 190px;
+margin-left: 155px;
 }
 .navbar_side{
     display: flex;
@@ -52,7 +52,12 @@ margin-right: 190px;
     display: flex;
     list-style: none;
     gap: 48px;
+
 }
+.navbar{
+    margin-left: 190px;
+}
+
 .menu li a {
     font-family: sans-serif;
     text-decoration: none;
@@ -97,6 +102,7 @@ margin-right: 190px;
 display: flex;
 align-items: center;
 gap: 16px;
+margin-right: 150px;
 cursor: pointer;
 }
 
@@ -402,6 +408,35 @@ cursor: pointer;
     font-family: sans-serif;
 }
 
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    transition: 0.3s;
+    display: none;
+}
+.add:hover{
+    background-color: #444;
+}
+.add.added{
+    background-color: green;
+    color: white;
+}
+.add.added:hover{
+    background-color: darkgreen;
+}
+
+
 .previos__price{
     position: relative;
     margin: 0;
@@ -508,11 +543,14 @@ cursor: pointer;
     background-color: #DB4444;
     color: white;
 }
-.catigorie__item img:hover{
-    color: white ;
-    filter: brightness(0) invert(1);
-  transition: 0.s ease;
-}
+.catigorie__item:hover img {
+    filter: brightness(0) invert(1); /* Oq qilib ko‘rsatadi */
+  }
+
+  .catigorie__item:hover .camera-icon path {
+    stroke: white;
+  }
+
 .red__icon2{
     width: 20px;
     height: 40px;
@@ -525,12 +563,13 @@ cursor: pointer;
     font-weight: 600;
     font-size: 16px;
     color: #DB4444;
-    white-space: nowrap;
+    margin-top: 10px;
 }
 .section__titles{
     margin-top: 140px;
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+    
 }
 .border{
     border: 1px solid gray;
@@ -621,8 +660,9 @@ cursor: pointer;
     font-size: 16px;
     color: #DB4444;
 }
-.section__title{
+.section__title-best{
     display: flex;
     align-items: center;
+    gap: 10px;
     margin-top: 70px;
 }
