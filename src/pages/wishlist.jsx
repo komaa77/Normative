@@ -1,4 +1,4 @@
-import Layout from "../layout/Layout";
+import Layout from "../Layout/Layout";
 import svg3 from '../assets/Cart1 (2).svg'
 import svg13 from "../assets/Vector (5).svg";
 import svg11 from "../assets/Quick View.svg";

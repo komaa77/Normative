@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../layout/Layout';
+import Layout from '../Layout/Layout';
 import sideImage from '../assets/Side Image (2).png';
 import { Link } from 'react-router-dom';
 
