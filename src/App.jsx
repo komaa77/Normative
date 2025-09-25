@@ -1,35 +1,21 @@
 import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Main from './components/Menu';
-import FlashSales from './components/Flash-Sales';
-import Categories from './components/categories';
-import Button from './components/button';
-import ProductCards from './components/Product-Cards';
-import Offercard from './components/offer-card';
-import OurProducts from './components/our-products';
-import Arrival from './components/Arrival';
-import Service from './components/Service';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SignUp from "./pages/Signup";
+import Login from './pages/Login';
+import Wishlist from './pages/wishlist';
 
-const App = () =>{
+const App = () => {
   return (
-    <>
-    <Header/>
-    <Navbar/>
-    <Main/>
-    <FlashSales/>
-    <ProductCards/>
-    <Categories/>
-    <Button/>
-    <Offercard/>
-    <OurProducts/>
-    <Arrival/>
-    <Service/>
-    <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign" element={<SignUp/>} />
+        <Route path="/log" element={<Login/>} />
+        <Route path='/wishlist' element={<Wishlist/>}/>
+      </Routes>
+    </Router>
   );
 };
 
-export default App
+export default App;

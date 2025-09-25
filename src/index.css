@@ -382,18 +382,6 @@ cursor: pointer;
     font-size: 12px;
     border-radius: 5px;
 }
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 999; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.5); 
-  }
-  
 
 .info__side .type{
     font-family: sans-serif;
@@ -407,7 +395,10 @@ cursor: pointer;
     color: #DB4444;
     font-family: sans-serif;
 }
-
+.stars{
+    display: flex;
+    gap: 5px;
+}
 
 .add{
     display: flex;
@@ -640,6 +631,8 @@ cursor: pointer;
 }
 .best__ratings{
     margin-top: 8px;
+    display: flex;
+    gap: 5px;
 }
 .best__number{
     position: absolute;
@@ -1162,3 +1155,413 @@ cursor: pointer;
     letter-spacing: 0%;
     color: gray;
 }
+
+
+
+.main__section{
+    width: 100%;
+    border-top: 1px solid gray;
+   
+}
+.signup{
+    padding-top: 60px;
+    border-top: 1px solid #b3b3b3;
+    margin-top: 30px;
+}
+.sign__over{
+    display: flex;
+    align-items: center;
+}
+.sign__form{
+    margin-left: 129px;
+}
+.form__sign{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.sign__title{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 36px; 
+    line-height: 30px;
+    letter-spacing: 4%;
+}
+.sign__text{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: 24px;
+}
+.sign__img{
+    margin-top: 60px;
+    margin-bottom: 140px;
+}
+.form__sign input{
+    padding-bottom: 8px;
+    width: 370px;
+    border: none;
+    border-bottom: 1px solid #7f7f7f;
+    outline: none;
+    margin-bottom: 40px;
+}
+.create__account-btn{
+    height: 56px;
+    background-color: #DB4444;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.sign__buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.google__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px #999 solid;
+    cursor: pointer;
+}
+.login__link{
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.sign__question{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4d4d4d;
+}
+.log__sign{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4d4d4d;
+}
+.log__sign{
+    text-decoration: none;
+    color: #4d4d4d;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #7f7f7f;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.create__account-btn:hover{
+    cursor: pointer;
+    background-color: #de7b7b;
+}
+.google__img:hover{
+    background-color: #cecbcb;
+}
+
+
+
+.log__in{
+    display: flex;
+    align-items: center;
+    gap: 87px;
+}
+
+.log__question{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.log__account-btn{
+    height: 56px;
+    background-color: #DB4444;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    width: 143px;
+    height: 56px;
+}
+.log__account-btn:hover{
+    cursor: pointer;
+    background-color: #de7b7b;
+}
+
+
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.user__icon-modal{
+    position: relative;
+}
+
+.modal__item{
+    position: absolute;
+    width: 224px;
+    border-radius: 4px;
+    background: #0000000A;
+    z-index: 2;
+    right: 0;
+    backdrop-filter: blur(100px);
+    display: none;
+}
+.user__check{
+    display: none;
+}
+
+#user__check:checked ~ .modal__item{
+    display: block;
+}
+.list__icon a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 16px;
+}
+.list__icon{
+    list-style: none;
+}
+.user__look{
+    cursor: pointer;
+}
+
+.modal__menu{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.wishlist{
+    border-top: 0.5px solid gray;
+    margin-top: 20px;
+}
+
+.wishlist__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.wishlist__menu p{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.wishlist__btn{
+    width: 223px;
+    height: 56px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #7f7f7f;
+    position: relative;
+}
+.wishlist__btn p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.wishlist__cards{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 140px;
+}
+.wishlist__image{
+    position: relative;
+    width: 200px;
+    height: 180px;
+    background-color: #f5f5f5;
+    padding: 35px 40px;
+    display: flex;
+    align-items: center;
+}
+.delete{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+}
+.wishlist__text{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+.wishlist__costs{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+.wishlist__price{
+    color: #DB4444;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.price{
+    margin-top: 3px;
+}
+
+.wishlist__discount{
+    padding: 4px 12px;
+    background-color: #DB4444;
+    color: #fff;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.wishlist__add{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 41px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 0 4px 4px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+
+.suggestions{
+    margin-top: 80px;
+}
+.main__suggestion{
+    display: flex;
+    align-items: center;
+}
+.box__suggestion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heart-icon{
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DB4444;
+}
+.suggestion__just{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-left: 16px;
+}
+.suggestion__btn{
+    width: 150px;
+    background-color: white;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid #7f7f7f;
+}
+
+.suggestion__btn p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.new{
+    padding: 4px 12px;
+    position: absolute;
+    background-color: #00FF66;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 430px;
+    left: 12px;
+    margin-top: 12px;
+}
+
+.toast-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50px;
+    margin-left: 600px;
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    z-index: 9999;
+    opacity: 0.95;
+    transition: all 0.3s ease;
+  }
+  
+  .toast-message.error {
+    background: #e74c3c;
+  }
+  
+  .toast-message.info {
+    background: #2ecc71;
+  }
+
+  

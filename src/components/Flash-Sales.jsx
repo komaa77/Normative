@@ -2,13 +2,7 @@ import React, { useState, useEffect } from "react";
 import icon7 from '../assets/Semiclone (1).svg';
 import arrow from '../assets/icons arrow-right (2).svg';
 import arrow2 from '../assets/icons_arrow-left.svg';
-import img1 from '../assets/Frame 611 (1).png';
-import svg11 from '../assets/Quick View.svg'
-import svg12 from '../assets/heart small.svg'
-import svg13 from '../assets/Vector (5).svg'
-import img2 from '../assets/Frame 612 (2).png';
-import img3 from '../assets/Frame 613 (1).png';
-import img4 from '../assets/Frame 614 (1).png';
+
 
 const FlashSales = () => {
   const [timeLeft, setTimeLeft] = useState({

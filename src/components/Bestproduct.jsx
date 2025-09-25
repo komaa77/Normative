@@ -42,7 +42,7 @@ const products = [
   },
 ];
 
-const Button = () => {
+const Bestproduct = () => {
   return (
     <section className="best">
       <div className="container">
@@ -94,4 +94,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default Bestproduct;

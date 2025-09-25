@@ -7,7 +7,6 @@ import svg11 from "../assets/Quick View.svg";
 import svg12 from "../assets/heart small.svg";
 import svg13 from "../assets/Vector (5).svg";
 
-
 const ProductCard = ({ product }) => {
   const [cartItems, setCartItems] = useState([]);
   const isAdded = cartItems.some((item) => item.id === product.id);
@@ -25,7 +24,16 @@ const ProductCard = ({ product }) => {
     } else {
       updated = [...cartItems, product];
       alert(`${product.name} savatga qoshildi!`);
+
+      // 🔥 wishlistga ham qo‘shamiz
+      const wishlist = JSON.parse(localStorage.getItem("wishlistItems")) || [];
+      const alreadyInWishlist = wishlist.some((item) => item.id === product.id);
+      if (!alreadyInWishlist) {
+        const updatedWishlist = [...wishlist, product];
+        localStorage.setItem("wishlistItems", JSON.stringify(updatedWishlist));
+      }
     }
+
     setCartItems(updated);
     localStorage.setItem("cartItems", JSON.stringify(updated));
   };
@@ -54,7 +62,7 @@ const ProductCard = ({ product }) => {
           <span className="current__price">${product.price}</span>
         </div>
         <div className="rating__side">
-          <div className="icons">
+          <div className="stars">
             <img src={svg13} alt="star" />
             <img src={svg13} alt="star" />
             <img src={svg13} alt="star" />
@@ -70,13 +78,11 @@ const ProductCard = ({ product }) => {
   );
 };
 
-
 const ProductCards = () => {
   const products = [
     { id: 1, name: "HAVIT HV-G92 Gamepad", price: 120, img: img1 },
     { id: 2, name: "AK-900 Wired Keyboard", price: 960, img: img2 },
     { id: 3, name: "IPS LCD Gaming Monitor", price: 370, img: img3 },
-    { id: 4, name: "S-Series Comfort Chair", price: 375, img: img4 },
     { id: 4, name: "S-Series Comfort Chair", price: 375, img: img4 },
   ];
 
